@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LenguajeDB", "LenguajeDB\LenguajeDB.csproj", "{055C2A4F-E47E-4C7E-A776-A90E19F1664C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055C2A4F-E47E-4C7E-A776-A90E19F1664C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055C2A4F-E47E-4C7E-A776-A90E19F1664C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055C2A4F-E47E-4C7E-A776-A90E19F1664C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055C2A4F-E47E-4C7E-A776-A90E19F1664C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EAF8516-739E-41A7-AAEC-4AEE28D9FFA2}
+	EndGlobalSection
+EndGlobal
