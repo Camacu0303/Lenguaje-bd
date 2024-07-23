@@ -22,15 +22,14 @@ namespace LenguajeDB.Interfaces
             dbConn = new Conn();
         }
 
-        string connectionString = "User Id=DBADMIN;Password=tu_contraseña;Data Source=tu_servidor;";
 
         private void LoadData()
         {
-            using (OracleConnection conn = dbConn.Connection)
+            using (OracleConnection conn = Conn.GetOpenConnection())
             {
                 try
                 {
-                    conn.Open();
+                    
                     string sql = "SELECT ID_PRODUCTO, DESCRIPCION, PRECIO, STOCK, ID_CATEGORIA, ID_SUCURSAL, ACTIVO FROM PRODUCTO";
 
                     OracleDataAdapter adapter = new OracleDataAdapter(sql, conn);
@@ -50,11 +49,11 @@ namespace LenguajeDB.Interfaces
 
         private void LoadSucursales()
         {
-            using (OracleConnection conn = dbConn.Connection)
+            using (OracleConnection conn = Conn.GetOpenConnection())
             {
                 try
                 {
-                    conn.Open();
+                    
                     string sql = "SELECT ID_SUCURSAL, NOMBRE_SUCURSAL FROM SUCURSAL";
 
                     OracleDataAdapter adapter = new OracleDataAdapter(sql, conn);
@@ -82,11 +81,11 @@ namespace LenguajeDB.Interfaces
 
         private void LoadCategorias()
         {
-            using (OracleConnection conn = dbConn.Connection)
+            using (OracleConnection conn = Conn.GetOpenConnection())
             {
                 try
                 {
-                    conn.Open();
+                   
                     string sql = "SELECT ID_CATEGORIA, NOMBRE_CATEGORIA FROM CATEGORIA";
 
                     OracleDataAdapter adapter = new OracleDataAdapter(sql, conn);
@@ -107,11 +106,11 @@ namespace LenguajeDB.Interfaces
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
-            using (OracleConnection conn = dbConn.Connection)
+            using (OracleConnection conn = Conn.GetOpenConnection())
             {
                 try
                 {
-                    conn.Open();
+                  
                     string sql = "INSERT INTO PRODUCTO (DESCRIPCION, PRECIO, STOCK, ID_CATEGORIA, ID_SUCURSAL, ACTIVO) " +
                                  "VALUES (:descripcion, :precio, :stock, :id_categoria, :id_sucursal, :activo)";
 
@@ -122,7 +121,7 @@ namespace LenguajeDB.Interfaces
                         cmd.Parameters.Add(new OracleParameter("stock", Convert.ToInt32(altoTextBox1_stock.Text)));
                         cmd.Parameters.Add(new OracleParameter("id_categoria", (int)comboBox2_categoria.SelectedValue));
                         cmd.Parameters.Add(new OracleParameter("id_sucursal", (int)comboBox1_sucursal.SelectedValue));
-                        cmd.Parameters.Add(new OracleParameter("activo", 1)); 
+                        cmd.Parameters.Add(new OracleParameter("activo", 1));
 
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Producto registrado exitosamente.");
@@ -186,11 +185,11 @@ namespace LenguajeDB.Interfaces
             {
                 int idProducto = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID_PRODUCTO"].Value);
 
-                using (OracleConnection conn = dbConn.Connection)
+                using (OracleConnection conn = Conn.GetOpenConnection())
                 {
                     try
                     {
-                        conn.Open();
+
                         string sql = "UPDATE PRODUCTO SET DESCRIPCION = :descripcion, PRECIO = :precio, " +
                                      "STOCK = :stock, ID_CATEGORIA = :id_categoria, ID_SUCURSAL = :id_sucursal, ACTIVO = :activo " +
                                      "WHERE ID_PRODUCTO = :id_producto";
@@ -229,11 +228,11 @@ namespace LenguajeDB.Interfaces
             {
                 int idProducto = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID_PRODUCTO"].Value);
 
-                using (OracleConnection conn = dbConn.Connection)
+                using (OracleConnection conn = Conn.GetOpenConnection())
                 {
                     try
                     {
-                        conn.Open();
+
                         string sql = "DELETE FROM PRODUCTO WHERE ID_PRODUCTO = :id_producto";
 
                         using (OracleCommand cmd = new OracleCommand(sql, conn))
@@ -257,4 +256,3 @@ namespace LenguajeDB.Interfaces
         }
     }
     }
-}

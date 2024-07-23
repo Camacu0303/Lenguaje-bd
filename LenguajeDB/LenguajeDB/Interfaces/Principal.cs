@@ -27,5 +27,11 @@ namespace LenguajeDB.Interfaces
             Usuario form= new Usuario();
             form.ShowDialog();
         }
+
+        private void btn_productos_Click(object sender, EventArgs e)
+        {
+            Producto_Crud form = new Producto_Crud();
+            form.ShowDialog();
+        }
     }
 }

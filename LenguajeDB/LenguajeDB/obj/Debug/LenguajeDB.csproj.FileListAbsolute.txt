@@ -78,3 +78,4 @@ C:\Users\andro\Documents\GitHub\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\Leng
 C:\Users\andro\Documents\GitHub\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.csproj.Up2Date
 C:\Users\andro\Documents\GitHub\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.exe
 C:\Users\andro\Documents\GitHub\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.pdb
+C:\Users\andro\Documents\GitHub\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Producto_Crud.resources

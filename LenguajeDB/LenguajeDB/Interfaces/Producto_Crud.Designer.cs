@@ -30,16 +30,16 @@
         {
             this.btn_registrar = new AltoControls.AltoButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1_sucursal = new System.Windows.Forms.ComboBox();
-            this.comboBox2_categoria = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.STOCK_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_CATEGORIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_SUCURSAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1_sucursal = new System.Windows.Forms.ComboBox();
+            this.comboBox2_categoria = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.altoTextBox1_stock = new AltoControls.AltoTextBox();
             this.btn_actualizar = new AltoControls.AltoButton();
             this.btn_eliminar = new AltoControls.AltoButton();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(915, 348);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ID_PRODUCTO
+            // 
+            this.ID_PRODUCTO.HeaderText = "ID";
+            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            // 
+            // DESCRIPCION_PRODUCTO
+            // 
+            this.DESCRIPCION_PRODUCTO.HeaderText = "Descripcion";
+            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            // 
+            // PRECIO_PRODUCTO
+            // 
+            this.PRECIO_PRODUCTO.HeaderText = "Precio";
+            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
+            // 
+            // STOCK_PRODUCTO
+            // 
+            this.STOCK_PRODUCTO.HeaderText = "Stock";
+            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
+            // 
+            // ID_CATEGORIA
+            // 
+            this.ID_CATEGORIA.HeaderText = "Categoria";
+            this.ID_CATEGORIA.Name = "ID_CATEGORIA";
+            // 
+            // ID_SUCURSAL
+            // 
+            this.ID_SUCURSAL.HeaderText = "Sucursal";
+            this.ID_SUCURSAL.Name = "ID_SUCURSAL";
             // 
             // comboBox1_sucursal
             // 
@@ -128,36 +159,6 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Categoria";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // ID_PRODUCTO
-            // 
-            this.ID_PRODUCTO.HeaderText = "ID";
-            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
-            // 
-            // DESCRIPCION_PRODUCTO
-            // 
-            this.DESCRIPCION_PRODUCTO.HeaderText = "Descripcion";
-            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
-            // 
-            // PRECIO_PRODUCTO
-            // 
-            this.PRECIO_PRODUCTO.HeaderText = "Precio";
-            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
-            // 
-            // STOCK_PRODUCTO
-            // 
-            this.STOCK_PRODUCTO.HeaderText = "Stock";
-            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
-            // 
-            // ID_CATEGORIA
-            // 
-            this.ID_CATEGORIA.HeaderText = "Categoria";
-            this.ID_CATEGORIA.Name = "ID_CATEGORIA";
-            // 
-            // ID_SUCURSAL
-            // 
-            this.ID_SUCURSAL.HeaderText = "Sucursal";
-            this.ID_SUCURSAL.Name = "ID_SUCURSAL";
             // 
             // label3
             // 
@@ -273,12 +274,25 @@
             this.btn_eliminar.Transparency = false;
             this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(85, 47);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(174, 39);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Productos";
+            // 
             // Producto_Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1050, 601);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.altoTextBox1_stock);
@@ -323,5 +337,6 @@
         private AltoControls.AltoTextBox altoTextBox1_stock;
         private AltoControls.AltoButton btn_actualizar;
         private AltoControls.AltoButton btn_eliminar;
+        private System.Windows.Forms.Label label6;
     }
 }
