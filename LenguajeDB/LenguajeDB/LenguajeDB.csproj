@@ -113,6 +113,12 @@
     <Compile Include="Interfaces\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Producto_Crud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Producto_Crud.Designer.cs">
+      <DependentUpon>Producto_Crud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Producto_Crud.resx">
+      <DependentUpon>Producto_Crud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
