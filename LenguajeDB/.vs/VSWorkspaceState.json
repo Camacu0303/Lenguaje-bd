@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\LenguajeDB",
+    "\\LenguajeDB\\Funciones",
     "\\LenguajeDB\\Interfaces"
   ],
-  "SelectedNode": "\\LenguajeDB\\Conexion",
+  "SelectedNode": "\\LenguajeDB.sln",
   "PreviewInSolutionExplorer": false
 }
