@@ -124,3 +124,4 @@ C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\Lengua
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.csproj.Up2Date
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.exe
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.pdb
+C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Sucursales.resources

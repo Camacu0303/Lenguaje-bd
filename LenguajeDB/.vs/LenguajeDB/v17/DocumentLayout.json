@@ -1,12 +1,86 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Funciones_Accesorio.cs",
+              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "RelativeToolTip": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAIwJgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:50:48.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Accesorios.cs",
+              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAcwI4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:48:17.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Accesorios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:48:15.364Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Categoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Categoria.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Categoria.cs",
+              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Categoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Categoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:48:05.625Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

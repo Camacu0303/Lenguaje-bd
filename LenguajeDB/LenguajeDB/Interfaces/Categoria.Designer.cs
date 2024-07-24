@@ -31,23 +31,24 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_eliminar = new AltoControls.AltoButton();
             this.btn_actualizar = new AltoControls.AltoButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_registrar = new AltoControls.AltoButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgv_Categorias = new System.Windows.Forms.DataGridView();
             this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.STOCK_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_registrar = new AltoControls.AltoButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.placeholderTextBox1 = new PlaceholderTextBox.PlaceholderTextBox();
-            this.placeholderTextBox2 = new PlaceholderTextBox.PlaceholderTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new PlaceholderTextBox.PlaceholderTextBox();
+            this.txtDesc = new PlaceholderTextBox.PlaceholderTextBox();
+            this.cmbActivo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.altoButton1 = new AltoControls.AltoButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Categorias)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,7 @@
             this.btn_eliminar.TabIndex = 33;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.Transparency = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_actualizar
             // 
@@ -105,21 +107,52 @@
             this.btn_actualizar.TabIndex = 32;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.Transparency = false;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
-            // dataGridView1
+            // dgv_Categorias
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Categorias.AllowUserToAddRows = false;
+            this.dgv_Categorias.AllowUserToDeleteRows = false;
+            this.dgv_Categorias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Categorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Categorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Categorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_PRODUCTO,
             this.DESCRIPCION_PRODUCTO,
             this.PRECIO_PRODUCTO,
             this.STOCK_PRODUCTO});
-            this.dataGridView1.Location = new System.Drawing.Point(55, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(915, 348);
-            this.dataGridView1.TabIndex = 21;
+            this.dgv_Categorias.Location = new System.Drawing.Point(55, 92);
+            this.dgv_Categorias.MultiSelect = false;
+            this.dgv_Categorias.Name = "dgv_Categorias";
+            this.dgv_Categorias.ReadOnly = true;
+            this.dgv_Categorias.Size = new System.Drawing.Size(915, 348);
+            this.dgv_Categorias.TabIndex = 21;
+            this.dgv_Categorias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.click);
+            this.dgv_Categorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ID_PRODUCTO
+            // 
+            this.ID_PRODUCTO.HeaderText = "ID";
+            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            this.ID_PRODUCTO.ReadOnly = true;
+            // 
+            // DESCRIPCION_PRODUCTO
+            // 
+            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
+            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            this.DESCRIPCION_PRODUCTO.ReadOnly = true;
+            // 
+            // PRECIO_PRODUCTO
+            // 
+            this.PRECIO_PRODUCTO.HeaderText = "Activo";
+            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
+            this.PRECIO_PRODUCTO.ReadOnly = true;
+            // 
+            // STOCK_PRODUCTO
+            // 
+            this.STOCK_PRODUCTO.HeaderText = "Descripción";
+            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
+            this.STOCK_PRODUCTO.ReadOnly = true;
             // 
             // btn_registrar
             // 
@@ -141,6 +174,7 @@
             this.btn_registrar.TabIndex = 20;
             this.btn_registrar.Text = "Registrar";
             this.btn_registrar.Transparency = false;
+            this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -159,26 +193,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1050, 63);
             this.tableLayoutPanel1.TabIndex = 35;
             // 
-            // ID_PRODUCTO
-            // 
-            this.ID_PRODUCTO.HeaderText = "ID";
-            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
-            // 
-            // DESCRIPCION_PRODUCTO
-            // 
-            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
-            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
-            // 
-            // PRECIO_PRODUCTO
-            // 
-            this.PRECIO_PRODUCTO.HeaderText = "Activo";
-            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
-            // 
-            // STOCK_PRODUCTO
-            // 
-            this.STOCK_PRODUCTO.HeaderText = "Descripción";
-            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -191,30 +205,30 @@
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // placeholderTextBox1
+            // txtNombre
             // 
-            this.placeholderTextBox1.Location = new System.Drawing.Point(125, 31);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.placeholderTextBox1.TabIndex = 37;
+            this.txtNombre.Location = new System.Drawing.Point(125, 30);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 37;
             // 
-            // placeholderTextBox2
+            // txtDesc
             // 
-            this.placeholderTextBox2.Location = new System.Drawing.Point(247, 31);
-            this.placeholderTextBox2.Name = "placeholderTextBox2";
-            this.placeholderTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.placeholderTextBox2.TabIndex = 38;
+            this.txtDesc.Location = new System.Drawing.Point(247, 30);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(100, 20);
+            this.txtDesc.TabIndex = 38;
             // 
-            // comboBox1
+            // cmbActivo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Sí",
-            "No"});
-            this.comboBox1.Location = new System.Drawing.Point(369, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(116, 21);
-            this.comboBox1.TabIndex = 39;
+            this.cmbActivo.FormattingEnabled = true;
+            this.cmbActivo.Items.AddRange(new object[] {
+            "No",
+            "Sí"});
+            this.cmbActivo.Location = new System.Drawing.Point(369, 30);
+            this.cmbActivo.Name = "cmbActivo";
+            this.cmbActivo.Size = new System.Drawing.Size(116, 21);
+            this.cmbActivo.TabIndex = 39;
             // 
             // label2
             // 
@@ -249,12 +263,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cmbActivo, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.placeholderTextBox2, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtDesc, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.placeholderTextBox1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtNombre, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtId, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(91, 474);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -275,13 +289,34 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "ID";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(3, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 43;
+            this.txtId.Enabled = false;
+            this.txtId.Location = new System.Drawing.Point(3, 30);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 43;
+            // 
+            // altoButton1
+            // 
+            this.altoButton1.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(168)))), ((int)(((byte)(183)))));
+            this.altoButton1.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(164)))), ((int)(((byte)(183)))));
+            this.altoButton1.BackColor = System.Drawing.Color.Transparent;
+            this.altoButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.altoButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.altoButton1.ForeColor = System.Drawing.Color.White;
+            this.altoButton1.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton1.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton1.Location = new System.Drawing.Point(862, 56);
+            this.altoButton1.Name = "altoButton1";
+            this.altoButton1.Radius = 10;
+            this.altoButton1.Size = new System.Drawing.Size(108, 30);
+            this.altoButton1.Stroke = false;
+            this.altoButton1.StrokeColor = System.Drawing.Color.Gray;
+            this.altoButton1.TabIndex = 44;
+            this.altoButton1.Text = "Recargar";
+            this.altoButton1.Transparency = false;
+            this.altoButton1.Click += new System.EventHandler(this.altoButton1_Click);
             // 
             // Categoria
             // 
@@ -289,16 +324,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1050, 601);
+            this.Controls.Add(this.altoButton1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_Categorias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Categoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categoria";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Categorias)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -312,21 +348,22 @@
         private System.Windows.Forms.Label label6;
         private AltoControls.AltoButton btn_eliminar;
         private AltoControls.AltoButton btn_actualizar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Categorias;
         private AltoControls.AltoButton btn_registrar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PRODUCTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION_PRODUCTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO_PRODUCTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STOCK_PRODUCTO;
         private System.Windows.Forms.Label label1;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox1;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private PlaceholderTextBox.PlaceholderTextBox txtNombre;
+        private PlaceholderTextBox.PlaceholderTextBox txtDesc;
+        private System.Windows.Forms.ComboBox cmbActivo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtId;
+        private AltoControls.AltoButton altoButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PRODUCTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION_PRODUCTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO_PRODUCTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STOCK_PRODUCTO;
     }
 }
