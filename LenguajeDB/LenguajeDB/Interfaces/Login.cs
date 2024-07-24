@@ -66,5 +66,10 @@ namespace LenguajeDB
                 form.ShowDialog();
             }
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
