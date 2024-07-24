@@ -56,7 +56,6 @@ namespace LenguajeDB.Utilidad
             IdUsuario = idUsuario;
         }
 
-        // Método para establecer los datos del usuario
 
     }
 

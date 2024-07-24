@@ -128,7 +128,7 @@
             this.dgv_Categorias.Size = new System.Drawing.Size(915, 348);
             this.dgv_Categorias.TabIndex = 21;
             this.dgv_Categorias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.click);
-            this.dgv_Categorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_Categorias.SelectionChanged += new System.EventHandler(this.selectionCHG);
             // 
             // ID_PRODUCTO
             // 

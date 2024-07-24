@@ -156,5 +156,70 @@ namespace LenguajeDB.Interfaces
                 MessageBox.Show("Error al cargar los accesorios: " + ex.Message);
             }
         }
+
+        private void CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Verificar que el clic fue dentro de una fila válida
+            {
+                // Obtener la fila correspondiente al clic
+                DataGridViewRow row = dgv_Accesorios.Rows[e.RowIndex];
+
+                // Seleccionar toda la fila
+                row.Selected = true;
+
+                txtId.Text = row.Cells[0].Value.ToString();
+                txtNombre.Text = row.Cells[1].Value.ToString();
+                txtDesc.Text=row.Cells[2].Value.ToString();
+                txtPrecio.Text= row.Cells[3].Value.ToString();
+                numStock.Value = Decimal.Parse(row.Cells[4].Value.ToString());
+
+                int idSeleccionado = Int32.Parse(row.Cells[5].Value.ToString());
+
+                // Buscar el índice del elemento en el ComboBox por su ValueMember (IdCategoria)
+                int indice = -1;
+                foreach (CategoriaClass categoria in cmbCategoria.Items)
+                {
+                    if (categoria.IdCategoria == idSeleccionado)
+                    {
+                        indice = cmbCategoria.Items.IndexOf(categoria);
+                        break; // Salir del bucle una vez encontrado el índice
+                    }
+                }
+
+                // Seleccionar el elemento en el ComboBox si se encontró el índice
+                if (indice != -1)
+                {
+                    cmbCategoria.SelectedIndex = indice;
+                }
+                else
+                {
+                    MessageBox.Show($"No se encontró ninguna categoría con el ID {idSeleccionado}");
+                }
+            }
+        }
+        private void SelectionChg(object sender, EventArgs e)
+        {
+            if (dgv_Accesorios.CurrentRow != null)
+            {
+                // Obtener la fila seleccionada actualmente
+                DataGridViewRow row = dgv_Accesorios.CurrentRow;
+
+                // Seleccionar toda la fila
+                row.Selected = true;
+            }
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            Funciones_Accesorio funciones = new Funciones_Accesorio();
+            bool exito = funciones.ModificarAccesorio(Int32.Parse(txtId.Text), txtNombre.Text, txtDesc.Text, Decimal.Parse(txtPrecio.Text), (int)numStock.Value, obtenerCategoria().IdCategoria);
+            if (exito)
+            {
+                MessageBox.Show("Se ha eliminado con éxito");
+                txtNombre.Text = "";
+                cmbCategoria.SelectedIndex = -1;
+                txtDesc.Text = "";
+            }
+        }
     }
 }

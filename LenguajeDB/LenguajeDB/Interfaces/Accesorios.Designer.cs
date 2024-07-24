@@ -115,6 +115,7 @@
             this.btn_actualizar.TabIndex = 32;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.Transparency = false;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // dgv_Accesorios
             // 
@@ -136,6 +137,8 @@
             this.dgv_Accesorios.ReadOnly = true;
             this.dgv_Accesorios.Size = new System.Drawing.Size(915, 348);
             this.dgv_Accesorios.TabIndex = 21;
+            this.dgv_Accesorios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick);
+            this.dgv_Accesorios.SelectionChanged += new System.EventHandler(this.SelectionChg);
             // 
             // ID_PRODUCTO
             // 

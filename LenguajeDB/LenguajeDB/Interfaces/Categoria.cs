@@ -44,11 +44,6 @@ namespace LenguajeDB.Interfaces
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void click(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) // Verificar que el clic fue dentro de una fila válida
@@ -129,6 +124,18 @@ namespace LenguajeDB.Interfaces
                 txtNombre.Text = "";
                 cmbActivo.SelectedIndex = -1;
                 txtDesc.Text = "";
+            }
+        }
+
+        private void selectionCHG(object sender, EventArgs e)
+        {
+            if (dgv_Categorias.CurrentRow != null)
+            {
+                // Obtener la fila seleccionada actualmente
+                DataGridViewRow row = dgv_Categorias.CurrentRow;
+
+                // Seleccionar toda la fila
+                row.Selected = true;
             }
         }
     }
