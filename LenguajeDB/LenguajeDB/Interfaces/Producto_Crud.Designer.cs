@@ -49,20 +49,23 @@
             this.btn_actualizar = new AltoControls.AltoButton();
             this.btn_eliminar = new AltoControls.AltoButton();
             this.label6 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_registrar
             // 
             this.btn_registrar.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
             this.btn_registrar.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.btn_registrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_registrar.BackColor = System.Drawing.Color.Transparent;
             this.btn_registrar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registrar.ForeColor = System.Drawing.Color.White;
             this.btn_registrar.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
             this.btn_registrar.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.btn_registrar.Location = new System.Drawing.Point(52, 536);
+            this.btn_registrar.Location = new System.Drawing.Point(91, 35);
             this.btn_registrar.Name = "btn_registrar";
             this.btn_registrar.Radius = 10;
             this.btn_registrar.Size = new System.Drawing.Size(168, 30);
@@ -75,6 +78,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_PRODUCTO,
@@ -236,13 +240,14 @@
             // 
             this.btn_actualizar.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
             this.btn_actualizar.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.btn_actualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_actualizar.BackColor = System.Drawing.Color.Transparent;
             this.btn_actualizar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actualizar.ForeColor = System.Drawing.Color.White;
             this.btn_actualizar.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
             this.btn_actualizar.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.btn_actualizar.Location = new System.Drawing.Point(312, 536);
+            this.btn_actualizar.Location = new System.Drawing.Point(441, 35);
             this.btn_actualizar.Name = "btn_actualizar";
             this.btn_actualizar.Radius = 10;
             this.btn_actualizar.Size = new System.Drawing.Size(168, 30);
@@ -257,13 +262,14 @@
             // 
             this.btn_eliminar.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
             this.btn_eliminar.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.btn_eliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_eliminar.BackColor = System.Drawing.Color.Transparent;
             this.btn_eliminar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.ForeColor = System.Drawing.Color.White;
-            this.btn_eliminar.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.btn_eliminar.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.btn_eliminar.Location = new System.Drawing.Point(548, 536);
+            this.btn_eliminar.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.btn_eliminar.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.btn_eliminar.Location = new System.Drawing.Point(791, 35);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Radius = 10;
             this.btn_eliminar.Size = new System.Drawing.Size(168, 30);
@@ -286,15 +292,31 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Productos";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.btn_registrar, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_actualizar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_eliminar, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 501);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1050, 100);
+            this.tableLayoutPanel1.TabIndex = 20;
+            // 
             // Producto_Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1050, 601);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btn_eliminar);
-            this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.altoTextBox1_stock);
             this.Controls.Add(this.altoTextBox1_precio);
             this.Controls.Add(this.altoTextBox1_descripcion);
@@ -306,10 +328,10 @@
             this.Controls.Add(this.comboBox2_categoria);
             this.Controls.Add(this.comboBox1_sucursal);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btn_registrar);
             this.Name = "Producto_Crud";
             this.Text = "Producto_Crud";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,5 +360,6 @@
         private AltoControls.AltoButton btn_actualizar;
         private AltoControls.AltoButton btn_eliminar;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -95,6 +95,37 @@
   <ItemGroup>
     <Compile Include="Conexion\Conn.cs" />
     <Compile Include="Funciones\Funcion.cs" />
+    <Compile Include="Funciones\Sucursales\Funciones.cs" />
+    <Compile Include="Interfaces\Sucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Sucursales.Designer.cs">
+      <DependentUpon>Sucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Accesorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Accesorios.Designer.cs">
+      <DependentUpon>Accesorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\EliminarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +166,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidad\Sesion.cs" />
     <Compile Include="Utilidad\Util.cs" />
+    <EmbeddedResource Include="Interfaces\Sucursales.resx">
+      <DependentUpon>Sucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Accesorios.resx">
+      <DependentUpon>Accesorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
