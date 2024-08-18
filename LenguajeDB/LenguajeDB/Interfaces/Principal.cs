@@ -78,9 +78,14 @@ namespace LenguajeDB.Interfaces
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            if (Sesion.ObtenerInstancia().IdRol != 3) {
+            if (Sesion.ObtenerInstancia().UserRole!=Rol.Admin) {
                 btn_EmpleadosAbrir.Visible = false;
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

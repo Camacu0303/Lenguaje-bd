@@ -138,5 +138,10 @@ namespace LenguajeDB.Interfaces
                 row.Selected = true;
             }
         }
+
+        private void dgv_Categorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

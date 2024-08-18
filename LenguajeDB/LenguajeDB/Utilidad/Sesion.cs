@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace LenguajeDB.Utilidad
 {
+    public enum Rol
+    {
+        Cliente = 1,
+        Empleado = 2,
+        Admin = 3
+    }
     public class Sesion
     {
         // Propiedades del usuario
@@ -16,7 +22,8 @@ namespace LenguajeDB.Utilidad
         public string Correo { get; set; }
         public string Telefono { get; set; }
         public bool Activo { get; set; }
-        public int IdRol { get; set; }
+
+        public Rol UserRole { get; set; }
 
         public int IdUsuario { get; set; }
         // Instancia Singleton
@@ -43,7 +50,7 @@ namespace LenguajeDB.Utilidad
             }
         }
 
-        public Sesion(string username, string password, string nombre, string apellido, string correo, string telefono, bool activo, int idRol, int idUsuario)
+        public Sesion(string username, string password, string nombre, string apellido, string correo, string telefono, bool activo, Rol Rol, int idUsuario)
         {
             Username = username;
             Password = password;
@@ -52,7 +59,7 @@ namespace LenguajeDB.Utilidad
             Correo = correo;
             Telefono = telefono;
             Activo = activo;
-            IdRol = idRol;
+            UserRole = Rol;
             IdUsuario = idUsuario;
         }
 

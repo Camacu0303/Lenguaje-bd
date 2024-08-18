@@ -81,7 +81,7 @@ namespace LenguajeDB.Funciones
                             sesion.Correo = reader["correo"].ToString();
                             sesion.Telefono = reader["telefono"].ToString();
                             
-                            sesion.IdRol = Convert.ToInt32(reader["id_rol"]);
+                            sesion.UserRole= (Rol) Convert.ToInt32(reader["id_rol"]);
                             sesion.IdUsuario = Convert.ToInt32(reader["id_usuario"]);
                             reader.Close();
                             return true;

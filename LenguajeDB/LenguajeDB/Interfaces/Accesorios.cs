@@ -208,7 +208,6 @@ namespace LenguajeDB.Interfaces
                 row.Selected = true;
             }
         }
-
         private void btn_actualizar_Click(object sender, EventArgs e)
         {
             Funciones_Accesorio funciones = new Funciones_Accesorio();

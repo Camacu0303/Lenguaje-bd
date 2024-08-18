@@ -97,6 +97,7 @@
     <Compile Include="Funciones\Accesorios\Funciones_Accesorio.cs" />
     <Compile Include="Funciones\Categoria\CategoriaClass.cs" />
     <Compile Include="Funciones\Categoria\Funciones_Categoria.cs" />
+    <Compile Include="Funciones\Clientes\Funciones_Clientes.cs" />
     <Compile Include="Funciones\Usuarios\Funcion.cs" />
     <Compile Include="Funciones\Sucursales\Funciones_Sucursal.cs" />
     <Compile Include="Interfaces\Sucursales.cs">

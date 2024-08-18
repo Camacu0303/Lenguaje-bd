@@ -31,7 +31,7 @@ namespace LenguajeDB.Interfaces
 
         private void Sucursales_Load(object sender, EventArgs e)
         {
-            if (Sesion.ObtenerInstancia().IdRol != 3)
+            if (Sesion.ObtenerInstancia().UserRole!=Rol.Admin)
             {
                 btn_actualizar.Enabled = false;
                 btn_eliminar.Enabled = false;
