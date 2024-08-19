@@ -36,8 +36,8 @@
             this.altoButton7 = new AltoControls.AltoButton();
             this.altoButton6 = new AltoControls.AltoButton();
             this.btn_EmpleadosAbrir = new AltoControls.AltoButton();
-            this.altoButton8 = new AltoControls.AltoButton();
             this.btnClientesAbrir = new AltoControls.AltoButton();
+            this.altoButton8 = new AltoControls.AltoButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -178,7 +178,7 @@
             this.altoButton6.Stroke = false;
             this.altoButton6.StrokeColor = System.Drawing.Color.Gray;
             this.altoButton6.TabIndex = 9;
-            this.altoButton6.Text = "Ventas";
+            this.altoButton6.Text = "Pedidos";
             this.altoButton6.Transparency = false;
             this.altoButton6.Click += new System.EventHandler(this.altoButton6_Click);
             // 
@@ -204,28 +204,6 @@
             this.btn_EmpleadosAbrir.Transparency = false;
             this.btn_EmpleadosAbrir.Click += new System.EventHandler(this.altoButton3_Click);
             // 
-            // altoButton8
-            // 
-            this.altoButton8.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.altoButton8.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.altoButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.altoButton8.BackColor = System.Drawing.Color.Transparent;
-            this.altoButton8.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.altoButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.altoButton8.ForeColor = System.Drawing.Color.White;
-            this.altoButton8.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.altoButton8.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
-            this.altoButton8.Location = new System.Drawing.Point(279, 7);
-            this.altoButton8.Name = "altoButton8";
-            this.altoButton8.Radius = 10;
-            this.altoButton8.Size = new System.Drawing.Size(86, 30);
-            this.altoButton8.Stroke = false;
-            this.altoButton8.StrokeColor = System.Drawing.Color.Gray;
-            this.altoButton8.TabIndex = 11;
-            this.altoButton8.Text = "Sucursales";
-            this.altoButton8.Transparency = false;
-            this.altoButton8.Click += new System.EventHandler(this.altoButton8_Click);
-            // 
             // btnClientesAbrir
             // 
             this.btnClientesAbrir.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
@@ -248,11 +226,33 @@
             this.btnClientesAbrir.Transparency = false;
             this.btnClientesAbrir.Click += new System.EventHandler(this.altoButton2_Click);
             // 
+            // altoButton8
+            // 
+            this.altoButton8.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton8.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.altoButton8.BackColor = System.Drawing.Color.Transparent;
+            this.altoButton8.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.altoButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.altoButton8.ForeColor = System.Drawing.Color.White;
+            this.altoButton8.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton8.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton8.Location = new System.Drawing.Point(279, 7);
+            this.altoButton8.Name = "altoButton8";
+            this.altoButton8.Radius = 10;
+            this.altoButton8.Size = new System.Drawing.Size(86, 30);
+            this.altoButton8.Stroke = false;
+            this.altoButton8.StrokeColor = System.Drawing.Color.Gray;
+            this.altoButton8.TabIndex = 11;
+            this.altoButton8.Text = "Sucursales";
+            this.altoButton8.Transparency = false;
+            this.altoButton8.Click += new System.EventHandler(this.altoButton8_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(862, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(872, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 25);
             this.pictureBox1.TabIndex = 0;
@@ -264,7 +264,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(920, 580);
+            this.ClientSize = new System.Drawing.Size(920, 131);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Principal";

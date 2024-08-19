@@ -38,7 +38,7 @@ namespace LenguajeDB.Interfaces
 
         private void altoButton4_Click(object sender, EventArgs e)
         {
-            Producto_Crud frm = new Producto_Crud();
+            Productos frm = new Productos();
             frm.ShowDialog();
         }
 
@@ -62,7 +62,8 @@ namespace LenguajeDB.Interfaces
 
         private void altoButton6_Click(object sender, EventArgs e)
         {
-
+            Pedidos frm= new Pedidos();
+            frm.ShowDialog();
         }
 
         private void altoButton7_Click(object sender, EventArgs e)

@@ -115,7 +115,6 @@ C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\Lengua
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.EliminarUsuario.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Login.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Principal.resources
-C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Producto_Crud.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Register.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Usuario.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Properties.Resources.resources
@@ -125,3 +124,5 @@ C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\Lengua
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.exe
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.pdb
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Sucursales.resources
+C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Pedidos.resources
+C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Productos.resources
