@@ -151,6 +151,38 @@ namespace LenguajeDB.Funciones.Productos
 
             return exito;
         }
+        public DataSet FiltrarProducto(int? idProducto, string descripcion)
+        {
+            DataSet dataSet = new DataSet();
 
+            try
+            {
+                using (OracleConnection connection = Conn.GetOpenConnection())
+                {
+                    using (OracleCommand cmd = new OracleCommand("FiltrarProductos", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.Add("p_id_producto", OracleDbType.Int32).Value = idProducto.HasValue ? (object)idProducto.Value : DBNull.Value;
+                        cmd.Parameters.Add("p_descripcion", OracleDbType.Varchar2).Value = string.IsNullOrEmpty(descripcion) ? DBNull.Value : (object)descripcion;
+                        cmd.Parameters.Add("cur_resultado", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                        OracleDataAdapter da = new OracleDataAdapter(cmd);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds);
+                        return ds;
+                    }
+                }
+            }
+            catch (OracleException ex)
+            {
+                Console.WriteLine("Error de Oracle: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return dataSet;
+        }
     }
 }

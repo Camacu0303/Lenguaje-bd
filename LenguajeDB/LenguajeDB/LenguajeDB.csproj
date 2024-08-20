@@ -97,8 +97,8 @@
     <Compile Include="Funciones\Accesorios\Funciones_Accesorio.cs" />
     <Compile Include="Funciones\Categoria\CategoriaClass.cs" />
     <Compile Include="Funciones\Categoria\Funciones_Categoria.cs" />
-    <Compile Include="Funciones\Clientes\ClienteClass.cs" />
     <Compile Include="Funciones\Clientes\Funciones_Clientes.cs" />
+    <Compile Include="Funciones\Pedidos\DetallePedido.cs" />
     <Compile Include="Funciones\Pedidos\Funciones_Pedidos.cs" />
     <Compile Include="Funciones\Productos\Funciones_productos.cs" />
     <Compile Include="Funciones\Usuarios\Funcion.cs" />
@@ -263,6 +263,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\n84u4588v7m015ivbt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ewyvwqhti6mm01sbq7t %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg3r3b2n0oom01u7aq2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net461\System.Runtime.WindowsRuntime.targets" Condition="Exists('..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net461\System.Runtime.WindowsRuntime.targets')" />

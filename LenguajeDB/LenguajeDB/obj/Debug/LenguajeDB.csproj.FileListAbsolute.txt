@@ -126,3 +126,4 @@ C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\Lengua
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Sucursales.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Pedidos.resources
 C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.Productos.resources
+C:\Users\CamposVM\Documents\GitHub\Lenguaje en bases de datos\Lenguaje-bd\LenguajeDB\LenguajeDB\obj\Debug\LenguajeDB.Interfaces.FiltroCliente.resources

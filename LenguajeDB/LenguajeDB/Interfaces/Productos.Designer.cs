@@ -262,6 +262,11 @@
             // 
             this.numPrecio.DecimalPlaces = 2;
             this.numPrecio.Location = new System.Drawing.Point(263, 30);
+            this.numPrecio.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(120, 20);
             this.numPrecio.TabIndex = 46;
@@ -371,6 +376,11 @@
             // numStock
             // 
             this.numStock.Location = new System.Drawing.Point(393, 30);
+            this.numStock.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.numStock.Name = "numStock";
             this.numStock.Size = new System.Drawing.Size(120, 20);
             this.numStock.TabIndex = 45;
