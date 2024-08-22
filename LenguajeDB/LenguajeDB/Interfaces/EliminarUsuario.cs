@@ -44,7 +44,7 @@ namespace LenguajeDB.Interfaces
                 // Comprobar la respuesta del usuario
                 if (result == DialogResult.Yes)
                 {
-                    Funcion func = new Funcion();
+                    Funciones_Usuarios func = new Funciones_Usuarios();
                     func.EliminarUsuario(Sesion.ObtenerInstancia().IdUsuario);
                     MessageBox.Show("Cuenta eliminada exitosamente.", "Eliminación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Application.Exit();

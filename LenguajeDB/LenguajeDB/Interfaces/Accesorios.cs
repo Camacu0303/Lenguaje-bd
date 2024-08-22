@@ -1,5 +1,6 @@
 ﻿using LenguajeDB.Funciones.Accesorios;
 using LenguajeDB.Funciones.Categoria;
+using LenguajeDB.Utilidad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,10 +38,32 @@ namespace LenguajeDB.Interfaces
 
         private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Accesorios_Load(object sender, EventArgs e)
+        {
+            cargarCategorias();
+
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Cliente)
+            {
+                // Set button colors to gray
+                btn_actualizar.BackColor = Color.Gray;
+                btn_eliminar.BackColor = Color.Gray;
+                btn_registrar.BackColor = Color.Gray;
+                btn_actualizar.Enabled = false;
+                btn_eliminar.Enabled = false;
+                btn_registrar.Enabled = false;
+
+                txtId.Enabled = false;
+                txtNombre.Enabled = false;
+                cmbCategoria.Enabled = false;
+                txtDesc.Enabled = false;
+                numStock.Enabled = false;
+                txtPrecio.Enabled = false;
+            }
+        }
+        private void cargarCategorias()
         {
             Funciones_Categoria funciones = new Funciones_Categoria();
             DataSet categoriasDataSet = funciones.ObtenerCategorias();
@@ -72,18 +95,16 @@ namespace LenguajeDB.Interfaces
             {
                 MessageBox.Show("No se encontraron categorías.");
             }
-
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
             Funciones_Accesorio funciones = new Funciones_Accesorio();
-            bool exito = funciones.RegistrarAccesorio(txtNombre.Text, txtDesc.Text, Decimal.Parse(txtPrecio.Text), (int) numStock.Value, obtenerCategoria().IdCategoria);
+            bool exito = funciones.RegistrarAccesorio(txtNombre.Text, txtDesc.Text, Decimal.Parse(txtPrecio.Text), (int)numStock.Value, obtenerCategoria().IdCategoria);
             if (exito)
             {
                 MessageBox.Show("Se ha creado con éxito");
@@ -92,7 +113,8 @@ namespace LenguajeDB.Interfaces
                 txtDesc.Text = "";
             }
         }
-        private CategoriaClass obtenerCategoria() {
+        private CategoriaClass obtenerCategoria()
+        {
 
             if (cmbCategoria.SelectedItem != null)
             {
@@ -169,8 +191,8 @@ namespace LenguajeDB.Interfaces
 
                 txtId.Text = row.Cells[0].Value.ToString();
                 txtNombre.Text = row.Cells[1].Value.ToString();
-                txtDesc.Text=row.Cells[2].Value.ToString();
-                txtPrecio.Text= row.Cells[3].Value.ToString();
+                txtDesc.Text = row.Cells[2].Value.ToString();
+                txtPrecio.Text = row.Cells[3].Value.ToString();
                 numStock.Value = Decimal.Parse(row.Cells[4].Value.ToString());
 
                 int idSeleccionado = Int32.Parse(row.Cells[5].Value.ToString());

@@ -437,6 +437,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dvgProductos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Productos";
             this.Text = "Producto_Crud";
             this.Load += new System.EventHandler(this.Productos_Load);

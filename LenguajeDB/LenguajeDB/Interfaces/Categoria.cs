@@ -1,5 +1,6 @@
 ﻿using LenguajeDB.Funciones.Categoria;
 using LenguajeDB.Funciones.Sucursales;
+using LenguajeDB.Utilidad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -142,6 +143,26 @@ namespace LenguajeDB.Interfaces
         private void dgv_Categorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Categoria_Load(object sender, EventArgs e)
+        {
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Cliente)
+            {
+                // Set button colors to gray
+                btn_actualizar.BackColor = Color.Gray;
+                btn_eliminar.BackColor = Color.Gray;
+                btn_registrar.BackColor = Color.Gray;
+                btn_actualizar.Enabled = false;
+                btn_eliminar.Enabled = false;
+                btn_registrar.Enabled = false;
+               
+                txtId.Enabled = false;
+                txtNombre.Enabled=false;
+                cmbActivo.Enabled = false;
+                txtDesc.Enabled = false;
+
+            }
         }
     }
 }

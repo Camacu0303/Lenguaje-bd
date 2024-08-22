@@ -165,6 +165,7 @@
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.Size = new System.Drawing.Size(800, 388);
             this.dgvClientes.TabIndex = 10;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             this.dgvClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellDoubleClick);
             this.dgvClientes.SelectionChanged += new System.EventHandler(this.SelectCHG);
             // 
@@ -237,6 +238,8 @@
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FiltroCliente";
             this.Text = "FiltroCliente";
             this.Load += new System.EventHandler(this.FiltroCliente_Load);

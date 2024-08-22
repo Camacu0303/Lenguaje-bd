@@ -147,36 +147,43 @@
             // 
             this.ID_PRODUCTO.HeaderText = "ID";
             this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            this.ID_PRODUCTO.ReadOnly = true;
             // 
             // DESCRIPCION_PRODUCTO
             // 
             this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
             this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            this.DESCRIPCION_PRODUCTO.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Apellido";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Teléfono";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Correo";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // STOCK_PRODUCTO
             // 
             this.STOCK_PRODUCTO.HeaderText = "Dirección";
             this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
+            this.STOCK_PRODUCTO.ReadOnly = true;
             // 
             // PRECIO_PRODUCTO
             // 
             this.PRECIO_PRODUCTO.HeaderText = "Activo";
             this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
+            this.PRECIO_PRODUCTO.ReadOnly = true;
             // 
             // btn_registrar
             // 
@@ -417,7 +424,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvClientes);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

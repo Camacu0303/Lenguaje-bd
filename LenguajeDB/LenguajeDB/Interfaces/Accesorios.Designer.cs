@@ -390,7 +390,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgv_Accesorios);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Accesorios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -32,6 +32,10 @@
             this.btn_eliminar = new AltoControls.AltoButton();
             this.btn_actualizar = new AltoControls.AltoButton();
             this.dgv_Sucursales = new System.Windows.Forms.DataGridView();
+            this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRECIO_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STOCK_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_registrar = new AltoControls.AltoButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,10 +48,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.altoButton1 = new AltoControls.AltoButton();
-            this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRECIO_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STOCK_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursales)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -127,6 +127,30 @@
             this.dgv_Sucursales.TabIndex = 21;
             this.dgv_Sucursales.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick);
             this.dgv_Sucursales.SelectionChanged += new System.EventHandler(this.Changed);
+            // 
+            // ID_PRODUCTO
+            // 
+            this.ID_PRODUCTO.HeaderText = "ID";
+            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            this.ID_PRODUCTO.ReadOnly = true;
+            // 
+            // DESCRIPCION_PRODUCTO
+            // 
+            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
+            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            this.DESCRIPCION_PRODUCTO.ReadOnly = true;
+            // 
+            // PRECIO_PRODUCTO
+            // 
+            this.PRECIO_PRODUCTO.HeaderText = "Ubicación";
+            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
+            this.PRECIO_PRODUCTO.ReadOnly = true;
+            // 
+            // STOCK_PRODUCTO
+            // 
+            this.STOCK_PRODUCTO.HeaderText = "Teléfono";
+            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
+            this.STOCK_PRODUCTO.ReadOnly = true;
             // 
             // btn_registrar
             // 
@@ -293,30 +317,6 @@
             this.altoButton1.Transparency = false;
             this.altoButton1.Click += new System.EventHandler(this.altoButton1_Click);
             // 
-            // ID_PRODUCTO
-            // 
-            this.ID_PRODUCTO.HeaderText = "ID";
-            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
-            this.ID_PRODUCTO.ReadOnly = true;
-            // 
-            // DESCRIPCION_PRODUCTO
-            // 
-            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
-            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
-            this.DESCRIPCION_PRODUCTO.ReadOnly = true;
-            // 
-            // PRECIO_PRODUCTO
-            // 
-            this.PRECIO_PRODUCTO.HeaderText = "Ubicación";
-            this.PRECIO_PRODUCTO.Name = "PRECIO_PRODUCTO";
-            this.PRECIO_PRODUCTO.ReadOnly = true;
-            // 
-            // STOCK_PRODUCTO
-            // 
-            this.STOCK_PRODUCTO.HeaderText = "Teléfono";
-            this.STOCK_PRODUCTO.Name = "STOCK_PRODUCTO";
-            this.STOCK_PRODUCTO.ReadOnly = true;
-            // 
             // Sucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,7 +328,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgv_Sucursales);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Sucursales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

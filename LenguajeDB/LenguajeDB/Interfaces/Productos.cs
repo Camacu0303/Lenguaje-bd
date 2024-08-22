@@ -162,7 +162,23 @@ namespace LenguajeDB.Interfaces
         {
             cargarCategorias();
             cargarSucursales();
-
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Cliente)
+            {
+                // Set button colors to gray
+                btn_actualizar.BackColor = Color.Gray;
+                btn_eliminar.BackColor = Color.Gray;
+                btn_registrar.BackColor = Color.Gray;
+                btn_actualizar.Enabled = false;
+                btn_eliminar.Enabled = false;
+                btn_registrar.Enabled = false;
+                txtDescripcion.Enabled = false;
+                txtId.Enabled = false;
+                cmbActivo.Enabled = false;
+                cmbCategoria.Enabled = false;
+                cmbSucursal.Enabled = false;
+                numPrecio.Enabled = false;
+                numStock.Enabled = false;
+            }
         }
 
         private void cargarSucursales()

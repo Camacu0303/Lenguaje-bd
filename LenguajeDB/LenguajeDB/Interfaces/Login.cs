@@ -59,8 +59,8 @@ namespace LenguajeDB
 
         private void altoButton1_Click(object sender, EventArgs e)
         {
-            Funcion funcion= new Funcion();
-            if (funcion.ConsultarUsuarioPorUsername(this.txtUsuario.Text, this.txtContrasena.Text)) { 
+            Funciones_Usuarios funcion= new Funciones_Usuarios();
+            if (funcion.Login(this.txtUsuario.Text, this.txtContrasena.Text)) { 
                 Principal form= new Principal();
                 this.Hide();
                 form.ShowDialog();

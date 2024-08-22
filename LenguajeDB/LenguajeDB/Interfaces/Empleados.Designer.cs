@@ -32,6 +32,13 @@
             this.btn_eliminar = new AltoControls.AltoButton();
             this.btn_actualizar = new AltoControls.AltoButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_registrar = new AltoControls.AltoButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,15 +56,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.placeholderTextBox3 = new PlaceholderTextBox.PlaceholderTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.ID_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCRIPCION_PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -134,6 +134,46 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(915, 348);
             this.dataGridView1.TabIndex = 21;
+            // 
+            // ID_PRODUCTO
+            // 
+            this.ID_PRODUCTO.HeaderText = "ID";
+            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            // 
+            // DESCRIPCION_PRODUCTO
+            // 
+            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
+            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Apellido";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Correo";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Teléfono";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Sucursal";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Activo";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // btn_registrar
             // 
@@ -255,6 +295,25 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(915, 58);
             this.tableLayoutPanel2.TabIndex = 42;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(783, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 47;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(783, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 24);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Activo";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -318,65 +377,6 @@
             this.placeholderTextBox3.Size = new System.Drawing.Size(100, 20);
             this.placeholderTextBox3.TabIndex = 46;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(783, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 24);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "Activo";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(783, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 47;
-            // 
-            // ID_PRODUCTO
-            // 
-            this.ID_PRODUCTO.HeaderText = "ID";
-            this.ID_PRODUCTO.Name = "ID_PRODUCTO";
-            // 
-            // DESCRIPCION_PRODUCTO
-            // 
-            this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
-            this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Apellido";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Correo";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Teléfono";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Sucursal";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Activo";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,7 +387,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

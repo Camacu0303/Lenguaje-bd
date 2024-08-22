@@ -2,12 +2,14 @@
 using LenguajeDB.Funciones.Accesorios;
 using LenguajeDB.Funciones.Categoria;
 using LenguajeDB.Funciones.Clientes;
+using LenguajeDB.Utilidad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,8 +18,8 @@ namespace LenguajeDB.Interfaces
 {
     public partial class FiltroCliente : Form
     {
-        private Pedidos frmPedidos;
-        public FiltroCliente(Pedidos frmPedidos)
+        private Principal frmPedidos;
+        public FiltroCliente(Principal frmPedidos)
         {
             InitializeComponent();
             this.frmPedidos = frmPedidos;
@@ -86,6 +88,7 @@ namespace LenguajeDB.Interfaces
                 frmPedidos.txtNuevoNombre.Text= row.Cells[1].Value.ToString();
                 frmPedidos.txtNuevoApellido.Text= row.Cells[2].Value.ToString();
                 frmPedidos.txtNuevoNum.Text= row.Cells[3].Value.ToString();
+                frmPedidos.cliente = new Cliente(Int32.Parse(row.Cells[0].Value.ToString()), row.Cells[1].Value.ToString() + " " + row.Cells[2].Value.ToString(), "", row.Cells[4].Value.ToString(), row.Cells[3].Value.ToString());
                 this.Close();
             }
         }
@@ -100,6 +103,11 @@ namespace LenguajeDB.Interfaces
                 // Seleccionar toda la fila
                 row.Selected = true;
             }
+        }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

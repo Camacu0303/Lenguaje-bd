@@ -30,8 +30,10 @@ namespace LenguajeDB.Interfaces
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)
         {
-            Funcion funcion = new Funcion();
-            funcion.RegistrarUsuario(this.txtUsuario.Text, this.txtContrasena.Text, this.txtNombre.Text, this.txtApellidos.Text, this.txtCorreo.Text, this.txtTelefono.Text);
+            Funciones_Usuarios funcion = new Funciones_Usuarios();
+            if (funcion.RegistrarUsuario(this.txtUsuario.Text, this.txtContrasena.Text, this.txtNombre.Text, this.txtApellidos.Text, this.txtCorreo.Text, this.txtTelefono.Text, Utilidad.Rol.Cliente)) { 
+                this.Close();
+            }
             
         }
 
