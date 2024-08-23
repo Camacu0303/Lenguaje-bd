@@ -1,12 +1,240 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\devoluciones\\funciones_devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\devoluciones\\funciones_devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\devoluciones.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\devoluciones.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\categoria\\funciones_categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\categoria\\funciones_categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\conexion\\conn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\conexion\\conn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\andro\\documents\\github\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Login.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Login.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Login.cs [Design]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T04:01:51.678Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Usuario.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Usuario.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Usuario.cs [Design]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Usuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T04:01:31.744Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Devoluciones.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs [Design]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Devoluciones.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:33:35.352Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Devoluciones.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Devoluciones.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAAGEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T01:15:59.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Accesorios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs [Design]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T01:14:16.248Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Accesorios.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T01:15:42.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Funciones_Accesorio.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "RelativeToolTip": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:59:02.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Funciones_Devoluciones.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
+              "RelativeToolTip": "LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:14:45.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Devoluciones.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.Designer.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Devoluciones.Designer.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.Designer.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Devoluciones.Designer.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAAAE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:33:36.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Funciones_Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Categoria\\Funciones_Categoria.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Categoria\\Funciones_Categoria.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Categoria\\Funciones_Categoria.cs",
+              "RelativeToolTip": "LenguajeDB\\Funciones\\Categoria\\Funciones_Categoria.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:14:55.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Conn.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Conexion\\Conn.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Conexion\\Conn.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Conexion\\Conn.cs",
+              "RelativeToolTip": "LenguajeDB\\Conexion\\Conn.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBsAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:19:02.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Principal.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Principal.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Principal.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Principal.cs",
+              "ViewState": "AQIAACUBAAAAAAAAAAAlwDEBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T01:09:53.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Principal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Principal.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Principal.cs",
+              "ToolTip": "C:\\Users\\andro\\Documents\\GitHub\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Principal.cs [Design]",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Principal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T01:09:48.709Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

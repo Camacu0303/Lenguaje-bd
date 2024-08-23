@@ -138,6 +138,7 @@
             this.dgv_Accesorios.Size = new System.Drawing.Size(915, 348);
             this.dgv_Accesorios.TabIndex = 21;
             this.dgv_Accesorios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick);
+            this.dgv_Accesorios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Accesorios_CellContentClick);
             this.dgv_Accesorios.SelectionChanged += new System.EventHandler(this.SelectionChg);
             // 
             // ID_PRODUCTO
@@ -233,6 +234,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 37;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtDesc
             // 
@@ -240,6 +242,7 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(100, 20);
             this.txtDesc.TabIndex = 38;
+            this.txtDesc.TextChanged += new System.EventHandler(this.txtDesc_TextChanged);
             // 
             // label2
             // 
@@ -334,6 +337,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 43;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // cmbCategoria
             // 

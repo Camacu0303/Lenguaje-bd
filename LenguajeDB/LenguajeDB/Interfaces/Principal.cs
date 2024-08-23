@@ -307,7 +307,8 @@ namespace LenguajeDB.Interfaces
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            Devoluciones frm = new Devoluciones();
+            frm.ShowDialog();
         }
 
         private void button14_Click(object sender, EventArgs e)

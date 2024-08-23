@@ -116,11 +116,18 @@
     <Compile Include="Funciones\Categoria\CategoriaClass.cs" />
     <Compile Include="Funciones\Categoria\Funciones_Categoria.cs" />
     <Compile Include="Funciones\Clientes\Funciones_Clientes.cs" />
+    <Compile Include="Funciones\Devoluciones\Funciones_Devoluciones.cs" />
     <Compile Include="Funciones\Pedidos\DetallePedido.cs" />
     <Compile Include="Funciones\Pedidos\Funciones_Pedidos.cs" />
     <Compile Include="Funciones\Productos\Funciones_productos.cs" />
     <Compile Include="Funciones\Usuarios\Funciones_Usuarios.cs" />
     <Compile Include="Funciones\Sucursales\Funciones_Sucursal.cs" />
+    <Compile Include="Interfaces\Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Devoluciones.Designer.cs">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\FiltroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +215,9 @@
     <Compile Include="Utilidad\Sesion.cs" />
     <Compile Include="Utilidad\Totales.cs" />
     <Compile Include="Utilidad\Util.cs" />
+    <EmbeddedResource Include="Interfaces\Devoluciones.resx">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\FiltroCliente.resx">
       <DependentUpon>FiltroCliente.cs</DependentUpon>
     </EmbeddedResource>

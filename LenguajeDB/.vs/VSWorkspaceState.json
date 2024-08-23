@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\LenguajeDB",
+    "\\LenguajeDB\\Conexion",
     "\\LenguajeDB\\Funciones",
     "\\LenguajeDB\\Interfaces"
   ],

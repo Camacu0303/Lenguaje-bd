@@ -17,7 +17,7 @@ namespace LenguajeDB.Conexion
             {
                 UserID = "DbAdmin",
                 Password = "password",
-                DataSource = "(DESCRIPTION =    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))    (CONNECT_DATA =      (SERVER = DEDICATED)      (SERVICE_NAME = orcl.localdomain)    )  )"
+                DataSource = "(DESCRIPTION =    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))    (CONNECT_DATA =      (SERVER = DEDICATED)      (SERVICE_NAME = orcl)    )  )"
             };
         }
 
