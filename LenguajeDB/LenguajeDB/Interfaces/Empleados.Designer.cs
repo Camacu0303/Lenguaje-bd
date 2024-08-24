@@ -147,11 +147,13 @@
             // 
             this.ID_PRODUCTO.HeaderText = "ID";
             this.ID_PRODUCTO.Name = "ID_PRODUCTO";
+            this.ID_PRODUCTO.ReadOnly = true;
             // 
             // DESCRIPCION_PRODUCTO
             // 
             this.DESCRIPCION_PRODUCTO.HeaderText = "Nombre";
             this.DESCRIPCION_PRODUCTO.Name = "DESCRIPCION_PRODUCTO";
+            this.DESCRIPCION_PRODUCTO.ReadOnly = true;
             // 
             // Column1
             // 
@@ -427,7 +429,7 @@
             this.MaximizeBox = false;
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Empleados";
+            this.Text = "UltraTech - Gestor de Empleados";
             this.Load += new System.EventHandler(this.Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -332,7 +332,7 @@
             this.MaximizeBox = false;
             this.Name = "Sucursales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sucursales";
+            this.Text = "UltraTech - Gestor de sucursales";
             this.Load += new System.EventHandler(this.Sucursales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursales)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

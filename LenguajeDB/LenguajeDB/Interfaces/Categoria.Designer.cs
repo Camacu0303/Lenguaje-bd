@@ -334,7 +334,7 @@
             this.MaximizeBox = false;
             this.Name = "Categoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Categoria";
+            this.Text = "UltraTech - Gestor de Categorias";
             this.Load += new System.EventHandler(this.Categoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Categorias)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

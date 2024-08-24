@@ -116,17 +116,36 @@
     <Compile Include="Funciones\Categoria\CategoriaClass.cs" />
     <Compile Include="Funciones\Categoria\Funciones_Categoria.cs" />
     <Compile Include="Funciones\Clientes\Funciones_Clientes.cs" />
+    <Compile Include="Funciones\Devoluciones\Funciones_Devoluciones.cs" />
     <Compile Include="Funciones\Empleados\Funciones_empleados.cs" />
     <Compile Include="Funciones\Pedidos\DetallePedido.cs" />
     <Compile Include="Funciones\Pedidos\Funciones_Pedidos.cs" />
     <Compile Include="Funciones\Productos\Funciones_productos.cs" />
     <Compile Include="Funciones\Usuarios\Funciones_Usuarios.cs" />
     <Compile Include="Funciones\Sucursales\Funciones_Sucursal.cs" />
+    <Compile Include="Interfaces\Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Devoluciones.Designer.cs">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\FiltroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\FiltroCliente.Designer.cs">
       <DependentUpon>FiltroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FiltroLineapedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FiltroLineapedido.Designer.cs">
+      <DependentUpon>FiltroLineapedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FiltroPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FiltroPedido.Designer.cs">
+      <DependentUpon>FiltroPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Imprimir.cs">
       <SubType>Form</SubType>
@@ -170,12 +189,6 @@
     <Compile Include="Interfaces\Categoria.Designer.cs">
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\EliminarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaces\EliminarUsuario.Designer.cs">
-      <DependentUpon>EliminarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,8 +222,17 @@
     <Compile Include="Utilidad\Sesion.cs" />
     <Compile Include="Utilidad\Totales.cs" />
     <Compile Include="Utilidad\Util.cs" />
+    <EmbeddedResource Include="Interfaces\Devoluciones.resx">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\FiltroCliente.resx">
       <DependentUpon>FiltroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FiltroLineapedido.resx">
+      <DependentUpon>FiltroLineapedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FiltroPedido.resx">
+      <DependentUpon>FiltroPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Imprimir.resx">
       <DependentUpon>Imprimir.cs</DependentUpon>
@@ -232,9 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Categoria.resx">
       <DependentUpon>Categoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\EliminarUsuario.resx">
-      <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

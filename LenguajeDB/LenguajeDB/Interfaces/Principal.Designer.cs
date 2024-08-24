@@ -161,6 +161,7 @@
             this.dgvPedidos.ReadOnly = true;
             this.dgvPedidos.Size = new System.Drawing.Size(786, 423);
             this.dgvPedidos.TabIndex = 47;
+            this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellContentClick);
             // 
             // label2
             // 
@@ -170,6 +171,7 @@
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Cliente";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtClienteFiltro
             // 
@@ -179,6 +181,7 @@
             this.txtClienteFiltro.PlaceholderText = "ID del cliente";
             this.txtClienteFiltro.Size = new System.Drawing.Size(100, 20);
             this.txtClienteFiltro.TabIndex = 2;
+            this.txtClienteFiltro.TextChanged += new System.EventHandler(this.txtClienteFiltro_TextChanged);
             // 
             // label1
             // 
@@ -188,6 +191,7 @@
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID del pedido";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtPedidoFiltro
             // 
@@ -197,6 +201,7 @@
             this.txtPedidoFiltro.PlaceholderText = "Identificador del pedido";
             this.txtPedidoFiltro.Size = new System.Drawing.Size(124, 20);
             this.txtPedidoFiltro.TabIndex = 0;
+            this.txtPedidoFiltro.TextChanged += new System.EventHandler(this.txtPedidoFiltro_TextChanged);
             // 
             // tabPage2
             // 
@@ -852,7 +857,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Principal";
-            this.Text = "Pedidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "UltraTech - Gestor de Pedidos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.close);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.tbCRLT.ResumeLayout(false);

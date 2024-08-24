@@ -440,7 +440,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Productos";
-            this.Text = "Producto_Crud";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "UltraTech - Gestor de Productos";
             this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgProductos)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

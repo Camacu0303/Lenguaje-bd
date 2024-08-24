@@ -395,7 +395,7 @@
             this.MaximizeBox = false;
             this.Name = "Accesorios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Accesorios";
+            this.Text = "UltraTech - Gestor de Accesorios";
             this.Load += new System.EventHandler(this.Accesorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Accesorios)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

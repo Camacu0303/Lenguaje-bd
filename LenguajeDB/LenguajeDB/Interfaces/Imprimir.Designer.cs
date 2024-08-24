@@ -49,6 +49,8 @@
             this.ClientSize = new System.Drawing.Size(1071, 525);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Imprimir";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "UltraTech - Facturación del pedido";
             this.Load += new System.EventHandler(this.Imprimir_Load_1);
             this.ResumeLayout(false);
 

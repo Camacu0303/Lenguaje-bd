@@ -33,7 +33,7 @@ namespace LenguajeDB.Interfaces
             Funciones_Pedidos funciones = new Funciones_Pedidos();
 
             int? idPedido = null;
-            int? idCliente = null;
+          
 
             // Intentar convertir el valor de txtPedidoFiltro a un número entero
             if (int.TryParse(txtPedidoFiltro.Text, out int parsedIdPedido))
@@ -41,14 +41,10 @@ namespace LenguajeDB.Interfaces
                 idPedido = parsedIdPedido;
             }
 
-            // Intentar convertir el valor de txtClienteFiltro a un número entero
-            if (int.TryParse(txtClienteFiltro.Text, out int parsedIdCliente))
-            {
-                idCliente = parsedIdCliente;
-            }
+           
 
             // Llamar al método FiltrarPedidos con los valores obtenidos
-            DataSet dsPedidos = funciones.FiltrarPedidos(idPedido, idCliente);
+            DataSet dsPedidos = funciones.FiltrarPedidos(idPedido, txtClienteFiltro.Text);
 
             // Procesar el DataSet (por ejemplo, enlazarlo a un control DataGridView)
             if (dsPedidos.Tables.Count > 0)
@@ -307,7 +303,8 @@ namespace LenguajeDB.Interfaces
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            Devoluciones frm= new Devoluciones();
+            frm.ShowDialog();
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -339,6 +336,31 @@ namespace LenguajeDB.Interfaces
         private void close(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dgvPedidos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtClienteFiltro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPedidoFiltro_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
