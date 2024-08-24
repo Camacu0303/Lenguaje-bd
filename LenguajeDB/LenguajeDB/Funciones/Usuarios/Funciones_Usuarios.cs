@@ -31,7 +31,7 @@ namespace LenguajeDB.Funciones
                     cmd.Parameters.Add("p_apellido", OracleDbType.Varchar2).Value = apellido;
                     cmd.Parameters.Add("p_correo", OracleDbType.Varchar2).Value = correo;
                     cmd.Parameters.Add("p_telefono", OracleDbType.Varchar2).Value = telefono;
-                    cmd.Parameters.Add("p_id_rol", OracleDbType.Int32).Value = rol;
+                    cmd.Parameters.Add("p_id_rol", OracleDbType.Int32).Value = (int) rol;
                     cmd.ExecuteNonQuery();
                     
                     Console.WriteLine("Usuario registrado correctamente en Oracle.");
@@ -200,17 +200,7 @@ namespace LenguajeDB.Funciones
                         // Ejecutar el procedimiento almacenado
                         int rowsAffected = cmd.ExecuteNonQuery();
 
-                        // Verificar si se eliminó algún registro
-                        if (rowsAffected > 0)
-                        {
-                            Console.WriteLine($"Usuario con ID {idUsuario} eliminado correctamente en Oracle.");
-                            return true; // Return true indicating success
-                        }
-                        else
-                        {
-                            Console.WriteLine($"No se encontró usuario con ID {idUsuario} para eliminar.");
-                            return false; // Return false indicating user not found
-                        }
+                        return true;
                     }
                 }
             }
@@ -220,6 +210,131 @@ namespace LenguajeDB.Funciones
                 throw;
             }
         }
+        public DataSet LeerUsuarios(string username, string password)
+        {
+            using (OracleConnection connection = Conn.GetOpenConnection())
+            {
+                try
+                {
+                    OracleCommand cmd = new OracleCommand("consultarUsuarioPorUsername", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetros de entrada
+                    cmd.Parameters.Add("p_username", OracleDbType.Varchar2).Value = username;
+                    cmd.Parameters.Add("p_password", OracleDbType.Varchar2).Value = password;
+
+                    // Parámetro de salida (cursor)
+                    cmd.Parameters.Add("p_resultado", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+                    // Crear el adaptador de datos
+                    using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+                    {
+                        // Crear un DataSet para llenar con los datos
+                        DataSet dataSet = new DataSet();
+
+                        // Llenar el DataSet con los datos de la consulta
+                        adapter.Fill(dataSet);
+
+                        return dataSet;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    // Aquí podrías registrar el error o manejarlo de acuerdo a tus necesidades
+                    throw;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+        public DataSet FiltrarUsuariosPorNombre(string nombre)
+        {
+            using (OracleConnection connection = Conn.GetOpenConnection())
+            {
+                try
+                {
+                    OracleCommand cmd = new OracleCommand("filtrarUsuariosPorNombre", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetro de entrada
+                    cmd.Parameters.Add("p_nombre", OracleDbType.Varchar2).Value = (object)nombre ?? DBNull.Value;
+
+                    // Parámetro de salida (cursor)
+                    cmd.Parameters.Add("p_resultado", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+                    // Crear el adaptador de datos
+                    using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+                    {
+                        // Crear un DataSet para llenar con los datos
+                        DataSet dataSet = new DataSet();
+
+                        // Llenar el DataSet con los datos de la consulta
+                        adapter.Fill(dataSet);
+
+                        return dataSet;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones
+                    // Aquí podrías registrar el error o manejarlo de acuerdo a tus necesidades
+                    throw;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+        public bool ModificarUsuario(int idUsuario, string username, string password, string nombre, string apellido, string correo, string telefono, int activo, int idRol)
+        {
+            bool exito = false;
+
+            try
+            {
+                using (OracleConnection connection = Conn.GetOpenConnection())
+                {
+                    using (OracleCommand command = new OracleCommand("MODIFICARUSUARIO", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                        // Parámetros de entrada
+                        command.Parameters.Add("p_id_usuario", OracleDbType.Int32).Value = idUsuario;
+                        command.Parameters.Add("p_username", OracleDbType.Varchar2).Value = username;
+                        command.Parameters.Add("p_password", OracleDbType.Varchar2).Value = password;
+                        command.Parameters.Add("p_nombre", OracleDbType.Varchar2).Value = nombre;
+                        command.Parameters.Add("p_apellido", OracleDbType.Varchar2).Value = apellido;
+                        command.Parameters.Add("p_correo", OracleDbType.Varchar2).Value = correo;
+                        command.Parameters.Add("p_telefono", OracleDbType.Varchar2).Value = telefono;
+                        command.Parameters.Add("p_activo", OracleDbType.Int32).Value = activo;
+                        command.Parameters.Add("p_id_rol", OracleDbType.Int32).Value = idRol;
+
+                        // Ejecutar el procedimiento almacenado
+                        command.ExecuteNonQuery();
+
+                        exito = true;
+                    }
+                }
+            }
+            catch (OracleException ex)
+            {
+                // Manejar excepciones de Oracle
+                Console.WriteLine("Error de Oracle: " + ex.Message);
+                exito = false;
+            }
+            catch (Exception ex)
+            {
+                // Otros errores
+                Console.WriteLine("Error: " + ex.Message);
+                exito = false;
+            }
+
+            return exito;
+        }
+
 
     }
 

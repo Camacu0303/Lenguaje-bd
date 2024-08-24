@@ -116,6 +116,7 @@
     <Compile Include="Funciones\Categoria\CategoriaClass.cs" />
     <Compile Include="Funciones\Categoria\Funciones_Categoria.cs" />
     <Compile Include="Funciones\Clientes\Funciones_Clientes.cs" />
+    <Compile Include="Funciones\Empleados\Funciones_empleados.cs" />
     <Compile Include="Funciones\Pedidos\DetallePedido.cs" />
     <Compile Include="Funciones\Pedidos\Funciones_Pedidos.cs" />
     <Compile Include="Funciones\Productos\Funciones_productos.cs" />
@@ -320,6 +321,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net461\System.Runtime.WindowsRuntime.targets" Condition="Exists('..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net461\System.Runtime.WindowsRuntime.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

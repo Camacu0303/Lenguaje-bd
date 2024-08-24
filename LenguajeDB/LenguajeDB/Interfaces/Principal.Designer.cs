@@ -853,6 +853,7 @@
             this.MaximizeBox = false;
             this.Name = "Principal";
             this.Text = "Pedidos";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.close);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.tbCRLT.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

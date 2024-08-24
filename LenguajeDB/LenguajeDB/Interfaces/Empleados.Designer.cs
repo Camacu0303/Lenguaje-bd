@@ -42,24 +42,24 @@
             this.btn_registrar = new AltoControls.AltoButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.placeholderTextBox1 = new PlaceholderTextBox.PlaceholderTextBox();
-            this.placeholderTextBox2 = new PlaceholderTextBox.PlaceholderTextBox();
+            this.txtNombre = new PlaceholderTextBox.PlaceholderTextBox();
+            this.txtApellido = new PlaceholderTextBox.PlaceholderTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tablelayout = new System.Windows.Forms.TableLayoutPanel();
+            this.cmbActivo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.placeholderTextBox3 = new PlaceholderTextBox.PlaceholderTextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.cmbSucursal = new System.Windows.Forms.ComboBox();
+            this.txtCorreo = new PlaceholderTextBox.PlaceholderTextBox();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.altoButton1 = new AltoControls.AltoButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tablelayout.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -95,6 +95,7 @@
             this.btn_eliminar.TabIndex = 33;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.Transparency = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_actualizar
             // 
@@ -116,9 +117,12 @@
             this.btn_actualizar.TabIndex = 32;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.Transparency = false;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -131,9 +135,13 @@
             this.Column4,
             this.Column5});
             this.dataGridView1.Location = new System.Drawing.Point(55, 92);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(915, 348);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.SELECTchg);
             // 
             // ID_PRODUCTO
             // 
@@ -195,6 +203,7 @@
             this.btn_registrar.TabIndex = 20;
             this.btn_registrar.Text = "Registrar";
             this.btn_registrar.Transparency = false;
+            this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -225,19 +234,19 @@
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // placeholderTextBox1
+            // txtNombre
             // 
-            this.placeholderTextBox1.Location = new System.Drawing.Point(133, 30);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.placeholderTextBox1.TabIndex = 37;
+            this.txtNombre.Location = new System.Drawing.Point(133, 30);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 37;
             // 
-            // placeholderTextBox2
+            // txtApellido
             // 
-            this.placeholderTextBox2.Location = new System.Drawing.Point(263, 30);
-            this.placeholderTextBox2.Name = "placeholderTextBox2";
-            this.placeholderTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.placeholderTextBox2.TabIndex = 38;
+            this.txtApellido.Location = new System.Drawing.Point(263, 30);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 38;
             // 
             // label2
             // 
@@ -262,46 +271,49 @@
             this.label3.Text = "Correo";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // tableLayoutPanel2
+            // tablelayout
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 7;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 6, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.placeholderTextBox2, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.placeholderTextBox1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 5, 1);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.placeholderTextBox3, 3, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(55, 474);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.27586F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.72414F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(915, 58);
-            this.tableLayoutPanel2.TabIndex = 42;
+            this.tablelayout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tablelayout.ColumnCount = 7;
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tablelayout.Controls.Add(this.cmbActivo, 6, 1);
+            this.tablelayout.Controls.Add(this.label8, 6, 0);
+            this.tablelayout.Controls.Add(this.label7, 5, 0);
+            this.tablelayout.Controls.Add(this.label5, 4, 0);
+            this.tablelayout.Controls.Add(this.label4, 0, 0);
+            this.tablelayout.Controls.Add(this.label1, 1, 0);
+            this.tablelayout.Controls.Add(this.label3, 3, 0);
+            this.tablelayout.Controls.Add(this.txtApellido, 2, 1);
+            this.tablelayout.Controls.Add(this.label2, 2, 0);
+            this.tablelayout.Controls.Add(this.txtNombre, 1, 1);
+            this.tablelayout.Controls.Add(this.txtID, 0, 1);
+            this.tablelayout.Controls.Add(this.cmbSucursal, 5, 1);
+            this.tablelayout.Controls.Add(this.txtCorreo, 3, 1);
+            this.tablelayout.Controls.Add(this.txtTelefono, 4, 1);
+            this.tablelayout.Location = new System.Drawing.Point(55, 474);
+            this.tablelayout.Name = "tablelayout";
+            this.tablelayout.RowCount = 2;
+            this.tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.27586F));
+            this.tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.72414F));
+            this.tablelayout.Size = new System.Drawing.Size(915, 58);
+            this.tablelayout.TabIndex = 42;
             // 
-            // comboBox1
+            // cmbActivo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(783, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 47;
+            this.cmbActivo.FormattingEnabled = true;
+            this.cmbActivo.Items.AddRange(new object[] {
+            "No",
+            "Sí"});
+            this.cmbActivo.Location = new System.Drawing.Point(783, 30);
+            this.cmbActivo.Name = "cmbActivo";
+            this.cmbActivo.Size = new System.Drawing.Size(121, 21);
+            this.cmbActivo.TabIndex = 47;
             // 
             // label8
             // 
@@ -347,35 +359,58 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "ID";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(3, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 43;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(3, 30);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 43;
             // 
-            // comboBox2
+            // cmbSucursal
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(653, 30);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 44;
+            this.cmbSucursal.FormattingEnabled = true;
+            this.cmbSucursal.Location = new System.Drawing.Point(653, 30);
+            this.cmbSucursal.Name = "cmbSucursal";
+            this.cmbSucursal.Size = new System.Drawing.Size(121, 21);
+            this.cmbSucursal.TabIndex = 44;
             // 
-            // numericUpDown1
+            // txtCorreo
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(523, 30);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 45;
+            this.txtCorreo.Location = new System.Drawing.Point(393, 30);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtCorreo.TabIndex = 46;
             // 
-            // placeholderTextBox3
+            // txtTelefono
             // 
-            this.placeholderTextBox3.Location = new System.Drawing.Point(393, 30);
-            this.placeholderTextBox3.Name = "placeholderTextBox3";
-            this.placeholderTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.placeholderTextBox3.TabIndex = 46;
+            this.txtTelefono.Location = new System.Drawing.Point(523, 30);
+            this.txtTelefono.Mask = "0000-0000";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(124, 20);
+            this.txtTelefono.TabIndex = 48;
+            // 
+            // altoButton1
+            // 
+            this.altoButton1.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(168)))), ((int)(((byte)(183)))));
+            this.altoButton1.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(164)))), ((int)(((byte)(183)))));
+            this.altoButton1.BackColor = System.Drawing.Color.Transparent;
+            this.altoButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.altoButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.altoButton1.ForeColor = System.Drawing.Color.White;
+            this.altoButton1.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton1.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(230)))));
+            this.altoButton1.Location = new System.Drawing.Point(862, 56);
+            this.altoButton1.Name = "altoButton1";
+            this.altoButton1.Radius = 10;
+            this.altoButton1.Size = new System.Drawing.Size(108, 30);
+            this.altoButton1.Stroke = false;
+            this.altoButton1.StrokeColor = System.Drawing.Color.Gray;
+            this.altoButton1.TabIndex = 46;
+            this.altoButton1.Text = "Recargar";
+            this.altoButton1.Transparency = false;
+            this.altoButton1.Click += new System.EventHandler(this.altoButton1_Click);
             // 
             // Empleados
             // 
@@ -383,7 +418,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1050, 601);
-            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.altoButton1);
+            this.Controls.Add(this.tablelayout);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
@@ -392,11 +428,11 @@
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tablelayout.ResumeLayout(false);
+            this.tablelayout.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,19 +447,18 @@
         private AltoControls.AltoButton btn_registrar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox1;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox2;
+        private PlaceholderTextBox.PlaceholderTextBox txtNombre;
+        private PlaceholderTextBox.PlaceholderTextBox txtApellido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tablelayout;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSucursal;
+        private PlaceholderTextBox.PlaceholderTextBox txtCorreo;
+        private System.Windows.Forms.ComboBox cmbActivo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_PRODUCTO;
         private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION_PRODUCTO;
@@ -432,5 +467,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.MaskedTextBox txtTelefono;
+        private AltoControls.AltoButton altoButton1;
     }
 }

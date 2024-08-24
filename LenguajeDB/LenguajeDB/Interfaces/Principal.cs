@@ -225,7 +225,7 @@ namespace LenguajeDB.Interfaces
                     if (!row.IsNewRow) // Verificar que no sea la fila nueva vacía
                     {
                         int idProducto = Convert.ToInt32(row.Cells[0].Value); // Columna 0 es ID_PRODUCTO
-                        String desc = row.Cells[2].Value.ToString();
+                        String desc = row.Cells[1].Value.ToString();
                         decimal precio = Convert.ToDecimal(row.Cells[2].Value); // Columna 2 es PRECIO
                         int cantidad = Convert.ToInt32(row.Cells[3].Value); // Columna 3 es CANTIDAD
 
@@ -234,21 +234,21 @@ namespace LenguajeDB.Interfaces
                         lineas.Add(detalle);
                     }
                 }
-                //if (funciones.RegistrarPedido(Int32.Parse(txtNuevoCliente.Text), productos))
-                //{
-                //    MessageBox.Show("Compra finalizada");
-                //    dgvCaja.Rows.Clear();
-                //    dgvFiltroProductos.Rows.Clear();
-                //    numTotalProd.Value = 0;
-                //    txtNuevoCliente.Text = string.Empty;
-                //    txtNuevoNombre.Text = string.Empty;
-                //    txtNuevoApellido.Text = string.Empty;
-                //    txtNuevoNum.Text = string.Empty;
-                //    txtIDProdCompra.Text = string.Empty;
-                //    numPrecio.Value = 0;
-                //    numCantidad.Value = 0;
-                //    txtCalculo.Text = string.Empty;
-                //}
+                if (funciones.RegistrarPedido(Int32.Parse(txtNuevoCliente.Text), productos))
+                {
+                    MessageBox.Show("Compra finalizada");
+                    dgvCaja.Rows.Clear();
+                    dgvFiltroProductos.Rows.Clear();
+                    numTotalProd.Value = 0;
+                    txtNuevoCliente.Text = string.Empty;
+                    txtNuevoNombre.Text = string.Empty;
+                    txtNuevoApellido.Text = string.Empty;
+                    txtNuevoNum.Text = string.Empty;
+                    txtIDProdCompra.Text = string.Empty;
+                    numPrecio.Value = 0;
+                    numCantidad.Value = 0;
+                    txtCalculo.Text = string.Empty;
+                }
                 Imprimir imp = new Imprimir(lineas, cliente, new Totales(lineas));
                 imp.ShowDialog();
                
@@ -334,6 +334,11 @@ namespace LenguajeDB.Interfaces
                 btnEmpleados.Enabled = false;
                 btnEmpleados.BackColor = Color.Gray;
             }
+        }
+
+        private void close(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

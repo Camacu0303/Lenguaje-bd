@@ -242,5 +242,10 @@ namespace LenguajeDB.Interfaces
                 txtDesc.Text = "";
             }
         }
+
+        private void dgv_Accesorios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
