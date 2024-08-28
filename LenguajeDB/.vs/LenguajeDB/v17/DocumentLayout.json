@@ -1,120 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\accesorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\devoluciones\\funciones_devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\devoluciones\\funciones_devoluciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\funciones\\accesorios\\funciones_accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Funciones_Accesorio.cs",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
-              "RelativeToolTip": "LenguajeDB\\Funciones\\Accesorios\\Funciones_Accesorio.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAgwKYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:54:45.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Devoluciones.cs",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "RelativeToolTip": "LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAYwP8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:42:56.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Accesorios.cs",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
-              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs",
-              "ViewState": "AQIAALEAAAAAAAAAAAAmwL8AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:42:44.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Accesorios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Accesorios.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Accesorios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "LenguajeDB\\Interfaces\\Accesorios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:42:43.985Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Devoluciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Devoluciones.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Devoluciones.cs [Dise\u00F1o]",
-              "RelativeToolTip": "LenguajeDB\\Interfaces\\Devoluciones.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:40:54.071Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Funciones_Devoluciones.cs",
-              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
-              "RelativeDocumentMoniker": "LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
-              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
-              "RelativeToolTip": "LenguajeDB\\Funciones\\Devoluciones\\Funciones_Devoluciones.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAIwIsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:40:10.455Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

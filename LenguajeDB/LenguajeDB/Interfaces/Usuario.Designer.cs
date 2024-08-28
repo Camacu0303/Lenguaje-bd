@@ -387,6 +387,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 619);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtID
             // 
@@ -395,6 +396,7 @@
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(229, 20);
             this.txtID.TabIndex = 71;
+            this.txtID.TextChanged += new System.EventHandler(this.test);
             // 
             // label10
             // 
@@ -488,6 +490,7 @@
             this.Name = "Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UltraTech - Gestor de usuarios";
+            this.Load += new System.EventHandler(this.Usuario_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Usuarios)).EndInit();
             this.panel1.ResumeLayout(false);

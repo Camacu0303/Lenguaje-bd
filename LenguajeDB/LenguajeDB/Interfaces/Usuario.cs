@@ -66,15 +66,22 @@ namespace LenguajeDB.Interfaces
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
-            Rol rol = new Rol();
-            if (cmbRol.SelectedIndex > -1)
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Empleado && (cmbRol.SelectedValue.ToString().Equals("Empleado") || cmbRol.SelectedValue.ToString().Equals("Admin")))
             {
-                rol = (Rol)(cmbRol.SelectedIndex + 1);
-
-                Funciones_Usuarios funcion = new Funciones_Usuarios();
-                if (funcion.RegistrarUsuario(this.txtUsuario.Text, this.txtContrasena.Text, this.txtNombre.Text, this.txtApellidos.Text, this.txtCorreo.Text, this.txtTelefono.Text, rol))
+                MessageBox.Show("Sólo los administradores pueden crear usuarios empleados o administradores");
+            }
+            else
+            {
+                Rol rol = new Rol();
+                if (cmbRol.SelectedIndex > -1)
                 {
-                    MessageBox.Show("Usuario registrado");   
+                    rol = (Rol)(cmbRol.SelectedIndex + 1);
+
+                    Funciones_Usuarios funcion = new Funciones_Usuarios();
+                    if (funcion.RegistrarUsuario(this.txtUsuario.Text, this.txtContrasena.Text, this.txtNombre.Text, this.txtApellidos.Text, this.txtCorreo.Text, this.txtTelefono.Text, rol))
+                    {
+                        MessageBox.Show("Usuario registrado");
+                    }
                 }
             }
         }
@@ -93,7 +100,7 @@ namespace LenguajeDB.Interfaces
 
                 // Seleccionar toda la fila
                 row.Selected = true;
-                String val= row.Cells[0].Value.ToString();
+                String val = row.Cells[0].Value.ToString();
                 txtID.Text = val;
                 txtUsuario.Text = row.Cells[1].Value.ToString();
                 txtContrasena.Text = row.Cells[2].Value.ToString();
@@ -102,7 +109,7 @@ namespace LenguajeDB.Interfaces
                 txtCorreo.Text = row.Cells[5].Value.ToString();
                 txtTelefono.Text = row.Cells[6].Value.ToString();
                 cmbActivo.SelectedIndex = Int32.Parse(row.Cells[7].Value.ToString());
-                cmbRol.SelectedIndex = Int32.Parse(row.Cells[8].Value.ToString())-1;
+                cmbRol.SelectedIndex = Int32.Parse(row.Cells[8].Value.ToString()) - 1;
             }
         }
 
@@ -136,8 +143,8 @@ namespace LenguajeDB.Interfaces
                 txtApellidos.Text,                // Apellidos
                 txtCorreo.Text,                   // Correo
                 txtTelefono.Text,                 // Teléfono
-                cmbActivo.SelectedIndex,          
-                cmbRol.SelectedIndex + 1          
+                cmbActivo.SelectedIndex,
+                cmbRol.SelectedIndex + 1
             );
 
             if (exito)
@@ -178,8 +185,51 @@ namespace LenguajeDB.Interfaces
                 cmbActivo.SelectedIndex = -1;    // Desmarcar el combo box
                 cmbRol.SelectedIndex = -1;       // Desmarcar el combo box
             }
-            else {
+            else
+            {
                 MessageBox.Show("Se ha fallado con éxito");
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void test(object sender, EventArgs e)
+        {
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Cliente || Sesion.ObtenerInstancia().UserRole == Rol.Empleado)
+            {
+                if (String.IsNullOrEmpty(txtID.Text))
+                {
+                    cmbRol.Enabled = true;
+                }
+                else
+                {
+                    cmbRol.Enabled = false;
+                }
+            }
+
+        }
+
+        private void Usuario_Load(object sender, EventArgs e)
+        {
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Cliente)
+            {
+                txtID.Enabled = false;
+                txtUsuario.Enabled = false;
+                txtContrasena.Enabled = false;
+                txtNombre.Enabled = false;
+                txtApellidos.Enabled = false;
+                txtCorreo.Enabled = false;
+                txtTelefono.Enabled = false;
+                cmbActivo.Enabled = false;
+                cmbRol.Enabled = false;
+                btn_registrar.Enabled = false;
+                btn_actualizar.Enabled = false;
+                btn_eliminar.Enabled = false;
+                txtFiltro.Enabled = false;
+                btnFiltro.Enabled = false;
             }
         }
     }
