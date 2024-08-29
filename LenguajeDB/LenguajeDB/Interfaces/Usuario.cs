@@ -66,7 +66,7 @@ namespace LenguajeDB.Interfaces
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
-            if (Sesion.ObtenerInstancia().UserRole == Rol.Empleado && (cmbRol.SelectedValue.ToString().Equals("Empleado") || cmbRol.SelectedValue.ToString().Equals("Admin")))
+            if (Sesion.ObtenerInstancia().UserRole == Rol.Empleado && (cmbRol.SelectedItem.ToString().Equals("Empleado") || cmbRol.SelectedItem.ToString().Equals("Admin")))
             {
                 MessageBox.Show("Sólo los administradores pueden crear usuarios empleados o administradores");
             }

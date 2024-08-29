@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|c:\\users\\camposvm\\documents\\github\\lenguaje en bases de datos\\lenguaje-bd\\lenguajedb\\lenguajedb\\interfaces\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055C2A4F-E47E-4C7E-A776-A90E19F1664C}|LenguajeDB\\LenguajeDB.csproj|solutionrelative:lenguajedb\\interfaces\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Usuario.cs",
+              "RelativeDocumentMoniker": "LenguajeDB\\Interfaces\\Usuario.cs",
+              "ToolTip": "C:\\Users\\CamposVM\\Documents\\GitHub\\Lenguaje en bases de datos\\Lenguaje-bd\\LenguajeDB\\LenguajeDB\\Interfaces\\Usuario.cs",
+              "RelativeToolTip": "LenguajeDB\\Interfaces\\Usuario.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T04:38:14.652Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
